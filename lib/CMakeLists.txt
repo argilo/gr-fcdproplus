@@ -37,7 +37,7 @@ if(HIDAPI_LIBRARY)
     MESSAGE(STATUS "System Hidapi will be used")
     list(APPEND fcdproplus_libs  ${HIDAPI_LIBRARY} )
     find_path(HIDAPI_INCLUDES NAMES "hidapi.h"
-        HINTS /usr/include/hidapi
+        HINTS /usr/include/hidapi /usr/local/include/hidapi
         PATHS
         /usr/include
         /usr/local/include

@@ -75,7 +75,7 @@ endif()
 
 find_package(Gnuradio "3.8" REQUIRED audio blocks PATHS ${CMAKE_INSTALL_PREFIX} )
 list(INSERT CMAKE_MODULE_PATH 0 "${CMAKE_SOURCE_DIR}/cmake/Modules")
-FIND_LIBRARY(HIDAPI_LIBRARY hidapi-libusb)
+FIND_LIBRARY(HIDAPI_LIBRARY NAMES hidapi-libusb hidapi)
 
 include(GrVersion)
 
